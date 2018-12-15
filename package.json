@@ -1,0 +1,19 @@
+{
+  "name": "register-svelte-require",
+  "version": "0.0.0",
+  "description": "Hacky way to be able to require Svelte HTML files. Useful for tests.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saibotsivad/register-svelte-require.git"
+  },
+  "keywords": [
+    "svelte"
+  ],
+  "author": "saibotsivad",
+  "license": "VOL",
+  "bugs": {
+    "url": "https://github.com/saibotsivad/register-svelte-require/issues"
+  },
+  "homepage": "https://github.com/saibotsivad/register-svelte-require#readme"
+}
