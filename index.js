@@ -19,12 +19,13 @@ module.exports = (svelte, options) => {
 				})
 
 			require.extensions[extension] = (requiredModule, filename) => {
-				const options = Object.assign({
-					filename,
-					name: getName(filename, extension),
-					format: 'cjs'
-				}, options && options.compile || {})
-				const { js } = svelte.compile(fs.readFileSync(filename, 'utf-8'), options)
+				const { js } = svelte.compile(
+					fs.readFileSync(filename, 'utf-8'),
+					Object.assign({
+						filename,
+						name: getName(filename, extension),
+						format: 'cjs'
+					}, options && options.compile || {}))
 				return requiredModule._compile(js.code, filename)
 			}
 		})
