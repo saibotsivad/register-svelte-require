@@ -1,6 +1,6 @@
 {
   "name": "register-svelte-require",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Hacky way to be able to require Svelte HTML files. Useful for tests.",
   "main": "index.js",
   "repository": {
